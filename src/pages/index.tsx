@@ -1,14 +1,13 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
 
 type Props = {
   title: string
 }
 
-const foo = 'blad';
+const foo = 'blad'
 
-export default function Home({ title = "React Italo" }: Props) {
+export default function Home({ title = 'React Italo' }: Props) {
   return (
     <div className={styles.container}>
       <Head>
@@ -64,10 +63,7 @@ export default function Home({ title = "React Italo" }: Props) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
+          Powered by <span className={styles.logo}></span>
         </a>
       </footer>
     </div>
