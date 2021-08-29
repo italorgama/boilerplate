@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint src"
+    "lint": "eslint src --max-warnings=0"
+  },
+  "lint-staged": {
+    "src/**/*": ["npm run lint"]
   },
   "dependencies": {
     "next": "9.4.4",
@@ -25,6 +28,8 @@
     "eslint-plugin-react-hooks": "^4.0.4",
     "prettier": "^2.0.5",
     "git-commit-msg-linter": "^3.2.8",
-    "typescript": "^3.9.5"
+    "typescript": "^3.9.5",
+    "husky": "^5.1.1",
+    "lint-staged": "^10.5.4"
   }
 }
