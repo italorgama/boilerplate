@@ -6,6 +6,7 @@ type Props = {
 }
 
 const foo = 'blad'
+const italo = 'ifasdf'
 
 export default function Home({ title = 'React Italo' }: Props) {
   return (
